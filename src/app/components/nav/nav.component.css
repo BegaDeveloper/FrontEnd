@@ -1,0 +1,12 @@
+#header{
+    margin-left: 150px;
+}
+
+#list{
+    margin: 0 200px 0 auto;
+}
+
+li{
+    margin-right: 25px;
+    cursor: pointer;
+}

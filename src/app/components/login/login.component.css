@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.form-div{
+    
+    width: 600px;
+    padding: 40px 25px;
+    background-color: #5FD1FF;
+    border-radius: 30px;
+    -moz-box-shadow: 0 0 4px #ccc;
+-webkit-box-shadow: 0 0 4px #ccc;
+box-shadow: 0 0 4px #ccc;
+}
+
+.error-msg {
+    color: rgb(252, 66, 66);
+    font-size: 0.7em;
+    font-weight: 600;
+  }

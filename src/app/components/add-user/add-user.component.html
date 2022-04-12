@@ -1,0 +1,76 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="main-div mt-5">
+        <h3>Add user</h3>
+        <form [formGroup]="addForm" >
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="u_name.invalid && u_name.touched"
+              >
+                Username required !
+              </div>
+                <input type="text" name="u_name" id="" class="form-control" placeholder="Username " formControlName="u_name"  >
+            </div>
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="f_name.invalid && f_name.touched"
+              >
+                First name required !
+              </div>
+                <input type="text" name="f_name" id="" class="form-control" placeholder="First name " formControlName="f_name"  >
+            </div>
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="l_name.invalid && l_name.touched"
+              >
+                Last name required !
+              </div>
+                <input type="text" name="l_name" id="" class="form-control" placeholder="Last name" formControlName="l_name"  >
+            </div>
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="adress.invalid && adress.touched"
+              >
+                Adress required !
+              </div>
+                <input type="text" name="adress" id="" class="form-control" placeholder="Adress" formControlName="adress"  >
+            </div>
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="z_code.invalid && z_code.touched"
+              >
+                Zip code required !
+              </div>
+                <input type="text" name="z_code" id="" class="form-control" placeholder="Zip code" formControlName="z_code" >
+            </div>
+            <div class="form-group mb-2">
+                <div
+                class="error-msg mb-3"
+                *ngIf="city.invalid && city.touched"
+              >
+                City required !
+              </div>
+                <input type="text" name="city" id="" class="form-control" placeholder="City" formControlName="city" >
+            </div>
+            <div class="form-group">
+                <div
+                class="error-msg mb-3"
+                *ngIf="pass.invalid && pass.touched"
+              >
+                Password required (min lenght '3')!
+              </div>
+                <input type="password" name="pass" formControlName="pass" class="form-control" placeholder="Password " id="">
+            </div>
+        
+            <hr>
+            <div class="form-group mb-2">
+                <input type="submit" name="add" id="" class="btn btn-warning " value="Add user" (click)="postTheUser()" >
+            </div>
+        </form>
+    </div>
+</div>

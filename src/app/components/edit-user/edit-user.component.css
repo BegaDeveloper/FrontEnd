@@ -1,0 +1,9 @@
+.main-div{
+    width: 600px;
+}
+
+.error-msg {
+    color: rgb(252, 66, 66);
+    font-size: 0.7em;
+    font-weight: 600;
+  }
